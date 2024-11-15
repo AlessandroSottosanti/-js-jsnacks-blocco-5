@@ -25,5 +25,13 @@ zucchine.forEach((zucchina) => {
   }
 })
 
-console.log(longestzucchini);
-console.log(otherzucchini);
+console.table(longestzucchini);
+console.table(otherzucchini);
+
+// or
+
+const filteredArray = zucchine.filter((zucchina) => zucchina.length >= 15);
+console.table(filteredArray);
+
+const restArray = zucchine.filter((zucchina) => zucchina.length < 15);
+console.table(restArray);

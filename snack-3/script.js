@@ -8,3 +8,10 @@ const majNumbers = numbers.map((number) => {
     return result;
 });
 console.log(majNumbers);
+
+// or
+
+const newNumbers = [];
+
+numbers.forEach((number) => newNumbers.push(number + 1));
+console.log(newNumbers);

@@ -11,3 +11,11 @@ const posts = [
 let namesArray = posts.map((name) => name.author);
 
 console.log(namesArray);
+
+
+// or
+
+
+let namesArray2 = [];
+posts.forEach((name) => namesArray2.push(name.author));
+console.log(namesArray2);

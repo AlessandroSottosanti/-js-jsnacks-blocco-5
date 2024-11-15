@@ -10,11 +10,16 @@ let namesList = ``;
 
 names.forEach((name, i) => {
     if(i === names.length - 1){
-        namesList += `'${names[i]}' `
+        namesList += `'${name}' `
     }
     else{
-        namesList += `'${names[i]}', `;
+        namesList += `'${name}', `;
     }
 
 });
 console.log(namesList);
+
+//or
+
+const namesList2 = names.map(name =>  `'${name}'`);
+console.log(namesList2.join(', '));

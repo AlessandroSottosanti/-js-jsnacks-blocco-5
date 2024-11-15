@@ -11,7 +11,7 @@ let namesList = ``;
 
 people.forEach((persona, i) => {
   if(i === people.length - 1){
-      namesList += `'${persona.name}' `
+      namesList += `'${persona.name}' `;
   }
   else{
       namesList += `'${persona.name}', `;
@@ -19,3 +19,8 @@ people.forEach((persona, i) => {
 
 });
 console.log(namesList);
+
+// or
+
+const names = people.map(person =>  `'${person.name}'`);
+console.log(names.join(', '));

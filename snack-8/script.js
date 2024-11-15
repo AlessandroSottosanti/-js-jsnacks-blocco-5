@@ -24,3 +24,15 @@ const students = [
 
 const marco = students.find((student) => student.name === 'Marco Lanci');
 console.log(marco.class);
+
+// or
+
+let classOfMarco = '';
+
+students.forEach(student => {
+  if (student.name === 'Marco Lanci') {
+    classOfMarco = student.class;
+  }
+});
+
+console.log(classOfMarco); 

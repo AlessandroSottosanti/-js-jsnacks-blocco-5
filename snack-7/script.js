@@ -24,3 +24,11 @@ const students = [
 
 const studentTwo = students.find((student) => student.id === 2);
 console.log(studentTwo); 
+
+// or
+
+const student2Find = students.forEach((student) => {
+  if (student.id === 2){
+    console.log(student); 
+  }
+}) 

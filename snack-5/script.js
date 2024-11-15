@@ -4,14 +4,18 @@ const nums = [2, 8, 4, 7, 12, 87];
 // Risultato: [2, 8, 4, 12]
 
 
-// const oddNums = nums.filter((num) => {
-//     const oddsEven = num % 2 === 0;
-//     if (oddsEven){
-//         return num;
-//     }
-//   });
+let evenNumbers = [];
+
+const oddNums = nums.forEach((num) => {
+    const oddsEven = num % 2 === 0;
+    if (oddsEven){
+        evenNumbers.push(num);
+    }
+  });
   
-//   console.log (oddNums);
+  console.log (evenNumbers);
+
+  // or
 
 const evenNums = nums.filter((num) => num % 2 === 0);
 
