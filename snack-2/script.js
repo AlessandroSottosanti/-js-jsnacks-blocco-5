@@ -9,13 +9,11 @@ const people = [
 
 let namesList = ``;
 
-people.forEach((persona, i) => {
-  if(i === people.length - 1){
-      namesList += `'${persona.name}' `;
-  }
-  else{
-      namesList += `'${persona.name}', `;
-  }
+people.forEach((persona) => {
+  namesList += persona.name;
+  if(i < people.length - 1){
+     namesList += ', ';
+}
 
 });
 console.log(namesList);
@@ -24,3 +22,6 @@ console.log(namesList);
 
 const names = people.map(person =>  `'${person.name}'`);
 console.log(names.join(', '));
+
+
+//TODO FUNCTION (DONT REPEAT UR SAELF)

@@ -9,11 +9,9 @@ console.log(names);
 let namesList = ``;
 
 names.forEach((name, i) => {
-    if(i === names.length - 1){
-        namesList += `'${name}' `
-    }
-    else{
-        namesList += `'${name}', `;
+    namesList += `'${name}'`;
+    if(i < names.length - 1){
+        namesList += ', ';
     }
 
 });
