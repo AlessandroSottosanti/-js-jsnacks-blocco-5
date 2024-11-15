@@ -6,3 +6,16 @@ const people = [
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+let namesList = ``;
+
+people.forEach((persona, i) => {
+  if(i === people.length - 1){
+      namesList += `'${persona.name}' `
+  }
+  else{
+      namesList += `'${persona.name}', `;
+  }
+
+});
+console.log(namesList);
